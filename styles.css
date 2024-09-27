@@ -1,6 +1,7 @@
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color:rgb(194, 155, 168);
+
 }
 
 h1 {
@@ -115,12 +116,25 @@ input, textarea {
     padding: 5px;    
 }
 
-.menu {
-    display: flex;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    gap: 40px;
-}
+
+@media (min-width: 481px) {
+    .menu {
+        display: flex;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        gap: 40px;
+        max-width: 100px;
+    }
+  }
+
+@media (max-width: 480px) {
+    .menu {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        gap: 40px;
+        max-width: 100px;
+    }
+  }
 
 a:link {
     color:hsl(352, 49%, 91%);
