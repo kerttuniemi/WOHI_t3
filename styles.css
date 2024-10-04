@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color:rgb(194, 155, 168);
 
@@ -6,7 +6,6 @@ body {
 
 h1 {
     color:rgb(15, 70, 98);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     font-size: 50px;
 }
@@ -160,7 +159,66 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
+ laitetaan omat alkup css talteen */
 
+ h1 {
+    color:rgb(15, 70, 98) !important;
+    font-size: 50px !important;
+}
+
+
+ @media (min-width: 481px) {
+    .menu {
+        display: flex;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        gap: 40px;
+        
+    }
+  }
+
+@media (max-width: 480px) {
+    .menu {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        gap: 40px;
+        
+    }
+  }
+
+a:link {
+    color:hsl(352, 49%, 91%);
+    text-decoration: none;
+    
+}
+
+a:visited {
+    color:hsl(352, 49%, 91%);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(15, 70, 98);
+}
+
+body {
+    background-color:rgb(194, 155, 168) !important;
+}
+
+.container {
+    margin-left: 0px;
+}
+
+ul {
+    color: black;
+}
+
+button {
+    background-color:rgb(15, 70, 98) !important;
+    color:lavenderblush;
+
+    
+}
 
 
 

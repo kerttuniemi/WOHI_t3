@@ -4,44 +4,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ota yhteyttä</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://bootswatch.com/5/lux/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body style="margin-left: 10px;">
     <div class="menu">
         <a href="index.html">ETUSIVU</a>
         <a href="cv.html">CV</a>
         <a href="hobbies.html">VAPAA-AIKA</a>
         <a href="contact.html">OTA YHTEYTTÄ</a>
     </div>
-    <h1>Ota yhteyttä</h1>
-    <form style="margin-top: 30px;">
-    <div class="lomake">
-        <div style="margin-bottom: 20">
-            <label for="nimi">Nimi: </label><br>
-            <input type="text" id="nimi" name="nimi" value="" placeholder="nimesi" />
+    <h1 style="margin-top: 30px;">Ota yhteyttä</h1>
+    <form style="max-width: 400px;">
+          <div>
+            <label for="nimi" class="form-label mt-4">Nimi:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nimesi">
+          </div>
+          <div>
+            <label for="email" class="form-label mt-4">Sähköposti:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sähköpostisi">
+          </div>
+          <div>
+            <label for="ika" class="form-label mt-4">Ikä: </label><br>
+            <input type="number" id="ika" name="ika" min="0" placeholder="ikäsi numeroina"/>
         </div>
+          
+          <div>
+            <label for="exampleTextarea" class="form-label mt-4">Viesti:</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+          </div>
+            <legend class="mt-4">Mistä kuulit sivustani?</legend>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Google</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">LinkedIn</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Ystävä</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Muualta, mistä? </label><label for="muu"></label><label for="muumika"></label><input type="text" id="viesti" name="viesti" value=""/>
+              </div>
+            <div><button type="button" class="btn btn-primary" style="margin-top: 20px;">Lähetä</button>
+            </div>
 
-        <div style="margin-bottom: 20">
-            <label for="ika">Ikä: </label><br>
-            <input type="number" id="ika" name="ika" value="" min="0" placeholder="ikäsi numeroina" />
-        </div>
-        <div style="margin-bottom: 20">
-            <label for="sähköposti">Sähköposti: </label><br>
-            <input type="email" id="email" value="" placeholder="sähköpostiosoitteesi" />
-        </div>
-        <div>
-            <label for="viesti">Viesti: </label><br>
-            <textarea id="viesti" name="viesti" rows="5" cols="30" placeholder="kirjoita minulle jotain!"></textarea>
-        </div>
-
-        <p class="mistäkuulit">Mistä kuulit sivuistani?</p>
-        <div><label for="google"></label><input type="checkbox" id="google" name="google" value="google"> Google</div>
-        <div><label for="friend"></label><input type="checkbox" id="friend" name="friend" value="friend"> Ystävältä </div>
-        <div><label for="linkedin"></label><input type="checkbox" id="linkedin" name="linkedin" value="linkedin"> LinkedInistä</div>
-        <div><label for="muu"></label><input type="checkbox" id="muu" name="muu" value="muu"> Muu, mikä? <label for="muumika"></label><input type="text" id="viesti" name="viesti" value=""/></div>
-
-        <button type="button" style="margin-top: 30;">Lähetä</button>
-    </div>
-
-    </form>
+            </div>
+      </form>
 </body>
 </html>

@@ -3,9 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kerttu Niemi</title>
+    <link href="https://bootswatch.com/5/lux/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class = "container">
     <div class="menu">
         <a href="index.html">ETUSIVU</a>
         <a href="cv.html">CV</a>
@@ -14,19 +16,32 @@
     </div>
     <div>
         <div>
-            <h1>Kerttu Niemi</h1>
+            <h1 style="margin-top: 30px;">Kerttu Niemi</h1>
         </div>
-        <div class="img_kerttu" style="text-align: center;">
+        <div class="img_kerttu" style="margin-top: 30px;">
             <img src= "kuva.jpeg" width="200" height="auto" alt="Oma kuvani"/>
         </div>
-            <div class="handlet">
-                <h3>Sähköposti: keniemi@student.uef.fi</h3>
-                <h3>Instagram: niemenkerttu</h3>
-                <h3>Snapchat: kerttukanerva</h3>
-                <h3>LinkedIn: <a href="https://fi.linkedin.com/in/kerttu-niemi-5674452aa">Kerttu Niemi<a/></h3>
-                <p style="margin-top: 30px; text-align: center;">Reipas, positiivinen ja sosiaalinen joka</p>
-                <p style="text-align: center;">asian ihmettelijä</p>
+        
+
+        <div class="card mb-3" style="margin-top: 30px; max-width: 400px">
+            <div class="card-body">
+              <h5 class="card-title">Tietoja</h5>
             </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Sähköposti: keniemi@student.uef.fi</li>
+              <li class="list-group-item">Instagram: niemenkerttu</li>
+              <li class="list-group-item">LinkedIn: <a href="https://fi.linkedin.com/in/kerttu-niemi-5674452aa">Kerttu Niemi<a/></li>
+            </ul>
+          </div>
+          <div class="card" style="max-width: 400px;">
+            <div class="card-body">
+              <h5 class="card-subtitle mb-2 text-muted">Minä</h5>
+              <p class="card-text">Reipas, positiivinen ja sosiaalinen joka asian ihmettelijä.</p>
+            </div>
+          </div>
+              
+            
         </div>
+    </div>
 </body>
 </html>
